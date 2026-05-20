@@ -71,19 +71,19 @@
 }
 
 \newcommand{\resumeSubSubheading}[2]{
+  \vspace{-6pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
+      \textit{\small#1} & \textit{\small #2}
     \end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
-
 \renewcommand{\labelitemii}{$\circ$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[label={},  noitemsep, itemsep=-2pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-10pt}}
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -94,21 +94,30 @@
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{{\Large Brendan Tea}} & Email: \href{mailto:brentea168@gmail.com}{brentea168@gmail.com}\\
-  \href{https://someonecantcode.github.io/}{someonecantcode.github.io} & Mobile: \href{tel:+14259004519}{+1-425-900-4519} \\
+  \href{https://www.linkedin.com/in/brendan-tea-472a323a6/}{linkedin.com/in/brendan-tea-472a323a6/} & Mobile: \href{tel:+14259004519}{+1-425-900-4519} \\
 \end{tabular*}
 
 
 %-----------EDUCATION-----------------
-\section{Education}
-\resumeSubHeadingListStart
-    \resumeSubheading
-          {Bellevue College}{Bellevue, WA}
-          {Pursuing Associate in Electrical and Computer Engineering; GPA 4.0}{Sept. 2024 -- Jun 2026}
-    \resumeSubheading
-       {Lake Washington High School}{Kirkland, WA}
-        {AP Chemistry, AP Precalculus, Algebra 1-2, Geometry; GPA 4.0}{Sept. 2022 -- Jun 2026}
-  \resumeSubHeadingListEnd
 
+
+\section{Education}
+\begin{itemize}[leftmargin=0in, label={}, itemsep=5pt]
+    \resumeSubheading
+        {University of Washington}{Seattle, WA}
+        {Pursuing Bachelors of Science in Computer Science}{Sept. 2026 -- Jun 2028}
+    \resumeSubheading
+        {Bellevue College}{Bellevue, WA}
+        {Associate in Electrical and Computer Engineering}{Sept. 2024 -- Jun 2026}
+      \resumeSubSubheading{GPA: 4.00 - Summa Cum Laude}{}
+      \begin{itemize}[ leftmargin=0.27in, label=\textbullet, noitemsep, itemsep=-2pt]
+        \small
+          \item CS 211: Fundamentals of Computer Science II and CS 210: Fundamentals of Computer Science I.
+          \item ENGR 204: Electrical Circuits, MATH 255: Vector Calculus, and MATH 238: Differential Equations.
+          \item MATH 208: Introduction to Linear Algebra
+      \end{itemize}
+\end{itemize}
+\vspace{-15pt}
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
@@ -117,16 +126,17 @@
       {Bellevue College}{Bellevue, WA}
       {Math Lab Tutor}{July. 2025 -- Present}
       \resumeItemListStart
-        \resumeItem{Tutor}
-          {Oversee session structure and ensure equitable time management between online and in-person tutees. Develop tutees skills as independent learners. CRLA Level 1 Certified.}
+          \item Oversaw session structure to ensure equitable time management between online and in-person tutees.
+          \item Developed tutees skills as independent learners. Specialized in linear algebra and calculus.
+          \item CRLA Level 1 Certified.
       \resumeItemListEnd
 
       \resumeSubheading
       {Daiso Industries Co.}{Redmond, WA}
       {Associate Store Sales}{Aug. 2024 -- Sept. 2024}
       \resumeItemListStart
-        \resumeItem{Cashier}{Managed and assisted in financial transactions alongside organizing merchandize. Resolved daily conflicts and provided compassionate customer service to
-ensure satisfaction.}
+       \item Managed and assisted in financial transactions alongside organizing merchandize. 
+       \item Resolved daily conflicts and provided compassionate customer service to ensure satisfaction.
       \resumeItemListEnd 
 % --------Multiple Positions Heading------------
   %  \resumeSubSubheading
@@ -138,64 +148,39 @@ ensure satisfaction.}
 
 %-------------------------------------------
 
-   
-
-  \resumeSubHeadingListEnd
-
- 
-%------leadership stuff-----------
-\section{Activities and Leadership}
-  \resumeSubHeadingListStart
-
-    \resumeSubheading
-   {DECA}{Kirkland, Washington}
-      {Member}{Sept. 2022 -- Jun. 2026}
-      \resumeItemListStart
-        \resumeItem{Competitor}{Competed once at national level (ICDC) and twice at the state level (SCDC). Competed in Accounting Application Seires (ACT) applying both business accounting knowledge and public speaking placing 8th at State.}
-      \resumeItemListEnd 
-
-    \resumeSubheading
-       {Math Club}{Kirkland, Washington}
-      {Co-President/Treasurer}{Sept. 2024 -- Jun. 2026}
-      \resumeItemListStart
-        \resumeItem{Co-President}
-          {Managed and led a fifty member club. Focused on consistent member retention and volume. Organized competitions prep and coordinated competiton logistics. }
-        \resumeItem{Treasurer}
-          {Assisted in creating meeting slides, managing funds, and finding competitions. Took meeting notes alongside creating budgets for both the current and follow school year.}
-      \resumeItemListEnd
-
        \resumeSubheading
-       {National Honors Society}{Kirkland, Washington}
-        {Member}{July 2023 -- June 2026}
-        \resumeItemListStart
-        \resumeItem{Volunteer}
-          {Volunteered over 30+ hours at robotic competitions alongside tutoring at elementary schools.}
+       {Math Club}{Kirkland, Washington}
+      {Co-President}{Sept. 2024 -- Jun. 2026}
+      \resumeItemListStart
+         \item Managed a 50 member club while overseering consistent member retention and volume.
+         \item Organized structured competition prepartion and coordinated competiton logistics
+         \item Led a math team of 10 competitors placing.
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
+
 
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
-     \resumeSubItem{osu!web}
-      {Contributed to Laravel backend querying matches endpoint and React tooltip components.}
+    \resumeSubItem{Denoising Diffusion}
+    {Reimplemented DDPM, allowing for image synthesis. Optimized the ELBO to reverse Markov chain diffusion to iteratively reconstruct images from Gaussian noise. Used Python, Pytorch, and Google Colab}
+    \resumeSubItem{Minilistic MNIST}
+    {Built a simple MLP neural network utilizing atomic value nodes to classify numbers on the MNIST dataset. Experimented with up-to-date optimizations to achieve generalization and a validation accuracy of 96\%. \newline Used Java. Summary paper available on \href{https://github.com/someonecantcode/nn-pract/blob/main/micrograd/paper/CSPaper.pdf}{Github}.}
+    \resumeSubItem{osu!web}
+      {Contributed to backend querying matches and frontend components. Used Laravel and React.}
     \resumeSubItem{Roblox Triggerbot}
-      {External cheating software utilizing object detection trained on Roblox avatars to automate firing crosshair detection.}
-    \resumeSubItem{Automated Pneumatic Saw Cutter}
-      {A pneumatic piston contraption combinded with Arduino microcontroller to automate cutting wood to a defined shape.}
+      {External cheating software utilizing object detection trained on Roblox avatars towards crosshair detection. Used Python.}
   \resumeSubHeadingListEnd
 
-%
-%--------SKILLS------------
-%\section{Skills}
-%  \resumeSubHeadingListStart
-%    \item{
-%      \textbf{Languages}{: Scala, Python, JavaScript, C++, SQL, Java}
-%      \hfill
-%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
-%    }
-%  \resumeSubHeadingListEnd
-
-
-%-------------------------------------------
+% --------SKILLS------------
+\section{Skills \& Passions}
+ \resumeSubHeadingListStart
+  \resumeSubItem{Languages \& Tools}
+        {Java, Python, PyTorch, Git, Linux/Unix.}
+  \resumeSubItem{Passions}
+        {Machine learning, linear algebra, distributed systems and networks.}     
+  \resumeSubItem{Hobbies}{Running, like a lot of running. Feel free to ask about my favourite routes to run.} 
+ \resumeSubHeadingListEnd
+% -------------------------------------------
 \end{document}
