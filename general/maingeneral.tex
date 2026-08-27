@@ -17,6 +17,7 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage{setspace}
 \input{glyphtounicode}
 
 \pagestyle{fancy}
@@ -40,7 +41,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \vspace{-4pt}\scshape\raggedright\large 
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate PDF is machine readable/ATS parsable
@@ -82,7 +83,7 @@
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[label={},  noitemsep, itemsep=-2pt]}
+\newcommand{\resumeItemListStart}{\begin{itemize}[label={}, itemsep=1pt]\setstretch{0.85}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-10pt}}
 
 %-------------------------------------------
@@ -93,23 +94,22 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{{\Large Brendan Tea}} & Email: \href{mailto:brentea168@gmail.com}{brentea168@gmail.com}\\
-  \href{https://www.linkedin.com/in/brendan-tea-472a323a6/}{linkedin.com/in/brendan-tea-472a323a6/} & Mobile: \href{tel:+14259004519}{+1-425-900-4519} \\
+  \textbf{{\Large Brendan Tea}} & Email: \href{mailto:btea@uw.edu}{btea@uw.edu}\\
+  \href{https://github.com/someonecantcode}{GitHub: someonecantcode} & Mobile: \href{tel:+14259004519}{+1-425-900-4519} \\
 \end{tabular*}
 
 
 %-----------EDUCATION-----------------
 
-
 \section{Education}
 \begin{itemize}[leftmargin=0in, label={}, itemsep=5pt]
     \resumeSubheading
         {University of Washington}{Seattle, WA}
-        {Pursuing Bachelors of Science in Computer Science}{Expected Jun 2028}
+        {Pursuing Bachelor of Science in Computer Science}{Expected Jun 2030}
     \resumeSubheading
         {Bellevue College}{Bellevue, WA}
-        {Associate in Electrical and Computer Engineering}{Jun 2026}
-      \resumeSubSubheading{GPA: 4.00 - Summa Cum Laude}{}
+        {Associate in Science Track II: Electrical \& Computer Engineering}{Jun 2026}
+      \resumeSubSubheading{GPA: 4.00}{}
       \begin{itemize}[ leftmargin=0.27in, label=\textbullet, noitemsep, itemsep=-2pt]
         \small
           \item CS 211: Fundamentals of Computer Science II and CS 210: Fundamentals of Computer Science I.
@@ -124,10 +124,10 @@
   \resumeSubHeadingListStart
       \resumeSubheading
       {Bellevue College}{Bellevue, WA}
-      {Math Lab Tutor}{July. 2025 -- Present}
+      {Math Lab \& Drop-in Tutor}{July 2025 -- June 2026}
       \resumeItemListStart
-          \item Oversaw session structure to ensure equitable time management between online and in-person tutees.
-          \item Developed tutees skills as independent learners. Specialized in linear algebra and calculus.
+          \item Provided 1-on-1 tutoring 15--20 students weekly across the full calculus sequence, linear algebra, and drop-in physic kinematics.
+          \item Built lasting tutor-student relationships through consistent, repeat sessions, helping students independently complete coursework and demonstrably improve their grades.
           \item CRLA Level 1 Certified.
       \resumeItemListEnd
 
@@ -135,9 +135,17 @@
       {Daiso Industries Co.}{Redmond, WA}
       {Associate Store Sales}{Aug. 2024 -- Sept. 2024}
       \resumeItemListStart
-       \item Managed and assisted in financial transactions alongside organizing merchandize. 
-       \item Resolved daily conflicts and provided compassionate customer service to ensure satisfaction.
+       \item Ensured smooth daily retail operations by managing financial transactions, maintaining organized merchandise displays, and restocking inventory.
+       \item Delivered consistent, compassionate customer service across diverse customer needs, escalating complex issues to management when appropriate.
       \resumeItemListEnd 
+
+      \resumeSubheading
+       {Math Club}{Kirkland, Washington}
+      {Co-President}{Sept. 2024 -- Jun. 2026}
+      \resumeItemListStart
+         \item Elected via formal election and interview process after serving as Treasurer, applying prior experience in budgeting, documentation, and event planning to delegate responsibilities across an executive team.
+         \item Grew active competition participation from 8 to 25 students year-over-year by revising meeting structure and outreach; coordinated logistics for state level competitions.
+      \resumeItemListEnd
 % --------Multiple Positions Heading------------
   %  \resumeSubSubheading
   %   {Software Engineer I}{Oct 2014 -- Sep 2016}
@@ -147,37 +155,30 @@
   %   \resumeItemListEnd
 
 %-------------------------------------------
-
-       \resumeSubheading
-       {Math Club}{Kirkland, Washington}
-      {Co-President}{Sept. 2024 -- Jun. 2026}
-      \resumeItemListStart
-         \item Managed a 50 member club while overseering consistent member retention and volume.
-         \item Organized structured competition prepartion and coordinated competiton logistics
-         \item Led a math team of 10 competitors placing.
-      \resumeItemListEnd
-
-  \resumeSubHeadingListEnd
-
+\resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{Denoising Diffusion}
-    {Reimplemented DDPM, allowing for image synthesis. Optimized the ELBO to reverse Markov chain diffusion to iteratively reconstruct images from Gaussian noise. Used Python, Pytorch, and Google Colab}
-    \resumeSubItem{Minilistic MNIST}
-    {Built a simple MLP neural network utilizing atomic value nodes to classify numbers on the MNIST dataset. Experimented with up-to-date optimizations to achieve generalization and a validation accuracy of 96\%. \newline Used Java. Summary paper available on \href{https://github.com/someonecantcode/nn-pract/blob/main/micrograd/paper/CSPaper.pdf}{Github}.}
+    % \resumeSubItem{Denoising Diffusion}
+    % {Reimplemented SoTA DDPM, allowing for image synthesis. Optimized the ELBO to reverse Markov chain diffusion to iteratively reconstruct images from Gaussian noise. Used Python, Pytorch, and Google Colab}
+    \resumeSubItem{Dense $\beta$-VAE}
+    {Engineered a fully-connected $\beta$-VAE on MNIST achieving 24.5x latent compression, using BCE reconstruction loss and KL-divergence beta annealing to stabilize training over 16 epochs (30K batches).
+    Built entirely from vanilla linear layers as a from-scratch replication of the architecture. Code available on \href{https://github.com/someonecantcode/autoenc}{GitHub}.}
+    \resumeSubItem{GPT 2 (124M)}
+    {Pretrained a 124M-parameter GPT-2 from scratch on FineWeb, distributing training across 8xA100 GPUs via DDP with gradient accumulation, sustaining 400K tokens/sec and completing training in around one hour. Architecture designed to support downstream evaluation on benchmarks like HellaSwag. Code available on \href{https://github.com/someonecantcode/nn-pract}{GitHub}.}
+    \resumeSubItem{Java Autograd \& MNIST Classifier}
+    {Built a lightweight scalar-valued automatic differentiation engine from scratch, utilizing DAGs and topological sort for backpropagation. Trained a multi-layer perceptron on MNIST to validate the framework, achieving 96\% validation accuracy. 
+    Summary paper available on \href{https://github.com/someonecantcode/nn-pract/blob/main/micrograd/paper/CSPaper.pdf}{Github}.}
     \resumeSubItem{osu!web}
-      {Contributed to backend querying matches and frontend components. Used Laravel and React.}
-    \resumeSubItem{Roblox Triggerbot}
-      {External cheating software utilizing object detection trained on Roblox avatars towards crosshair detection. Used Python.}
+    {Contributed 5+ merged pull requests to osu!web: extended the /matches API endpoint to support filtering by active status, and shipped frontend improvements including beatmap favorite tooltips, standardized playcount/favorites display ordering, and cleanup of zero-value entries in user profile pages.}
   \resumeSubHeadingListEnd
 
 % --------SKILLS------------
 \section{Skills \& Passions}
  \resumeSubHeadingListStart
   \resumeSubItem{Languages \& Tools}
-        {Java, Python, PyTorch, Git, Linux/Unix.}
+        {Java, Python, PyTorch, Git, Linux/Unix, Slurm.}
   \resumeSubItem{Passions}
         {Machine learning, linear algebra, distributed systems and networks.}     
   % \resumeSubItem{Hobbies}{Running, like a lot of running. Feel free to ask about my favourite routes to run.} 
