@@ -162,9 +162,9 @@
   \resumeSubHeadingListStart
     % \resumeSubItem{Denoising Diffusion}
     % {Reimplemented SoTA DDPM, allowing for image synthesis. Optimized the ELBO to reverse Markov chain diffusion to iteratively reconstruct images from Gaussian noise. Used Python, Pytorch, and Google Colab}
-    \resumeSubItem{Dense $\beta$-VAE}
-    {Engineered a fully-connected $\beta$-VAE on MNIST achieving 24.5x latent compression, using BCE reconstruction loss and KL-divergence beta annealing to stabilize training over 16 epochs (30K batches).
-    Built entirely from vanilla linear layers as a from-scratch replication of the architecture. Code available on \href{https://github.com/someonecantcode/autoenc}{GitHub}.}
+    \resumeSubItem{Latent Flow Matching}
+    {Implemented class-conditional rectified flow matching as a latent diffusion model, training a pure MLP with sinusoidal time embeddings and residual blocks to learn the velocity field between noise and $\beta$-VAE-encoded MNIST digits.
+    Applied classifier-free guidance via label dropout, producing high-quality, controllable digit generation; analyzed the loss landscape, identifying a theoretical loss floor near 0.4 driven by the latent space's dimensionality. Code available on \href{https://github.com/someonecantcode/VarationalAutoencoder}{GitHub}.}
     \resumeSubItem{GPT 2 (124M)}
     {Pretrained a 124M-parameter GPT-2 from scratch on FineWeb, distributing training across 8xA100 GPUs via DDP with gradient accumulation, sustaining 400K tokens/sec and completing training in around one hour. Architecture designed to support downstream evaluation on benchmarks like HellaSwag. Code available on \href{https://github.com/someonecantcode/nn-pract}{GitHub}.}
     \resumeSubItem{Java Autograd \& MNIST Classifier}
